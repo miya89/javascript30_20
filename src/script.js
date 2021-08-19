@@ -15,8 +15,13 @@ recognition.addEventListener("result", (e) => {
     p = document.createElement("p");
     words.appendChild(p);
   }
+
+  if (transcript.includes("she codes")) {
+    console.log("👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻");
+  }
   console.log(transcript);
 });
+
 recognition.start();
 
 recognition.addEventListener("end", recognition.start);
